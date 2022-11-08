@@ -310,9 +310,6 @@ body {
   margin-top: var(--fs-100);
 }
 
-.container .row .main-content .button:hover {
-  background-image: linear-gradient(to right, #7123d6, #8327f7);
-}
 .container .row .main-content .btn {
   width: var(--wd-200);
   text-decoration: none;
@@ -320,13 +317,23 @@ body {
   font-weight: bolder;
   font-size: var(--pt-100);
   border-width: var(--bw-100);
-  border-image: linear-gradient(to right, #7123d6, #f26159) 1;
+  display:inline-block;
+  cursor:pointer;
+  position:relative;
+  border: transparent;
+  background-image: linear-gradient(to right, #7123d6, #f26159);
   padding: var(--pd-100);
+  -webkit-clip-path: polygon(
+    0% 20%,
+    5% 0%,
+    100% 0%,
+    100% 80%,
+    95% 100%,
+    0% 100%
+  );
+  -moz-clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.container .row .main-content .btn:hover {
-  background-image: linear-gradient(to right, #7123d6, #f26159);
-}
 .container .row .infi {
   margin-top: var(--mt-500);
   margin-bottom: var(--mt-600);
