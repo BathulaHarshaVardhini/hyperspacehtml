@@ -23,6 +23,7 @@ body {
   overflow-x: hidden !important;
   font-family: "Poppins", sans-serif;
   position: relative;
+  z-index: -3;
 }
 
 :root {
@@ -389,10 +390,13 @@ body {
 
 .container .context {
   margin-top: var(--ml-100);
-  border: 2px solid #d3d4d4;
+  /* border: 2px solid #d3d4d4; */
   border-radius: var(--mt-100);
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(1px);
+  background: #272525;
+  opacity: 0.9;
 }
 
 .container .context .row h3 {
@@ -402,6 +406,7 @@ body {
   font-size: var(--fs-700);
   color: #ffffff;
   text-align: start;
+  
 }
 .container .context .row p {
   font-weight: 200;
@@ -412,10 +417,12 @@ body {
   margin-left: var(--ml-300);
 }
 
-.container .context .row .ima {
+
+.container .context .row .bg-image{
   margin-top: var(--mt-900);
   height: 100%;
   width: 100%;
+padding: var(--fs-400);
 }
 
 .last-container .row .main-content {
@@ -515,30 +522,35 @@ body {
   height: 0.5%;
   top: 2%;
   left: 25%;
+  z-index: -2;
 }
 .planet2 {
   position: absolute;
   height: 1%;
   top: 2.2%;
   right: 18%;
+  z-index: -2;
 }
 .planet3 {
   position: absolute;
   height: 0.3%;
   top: 5.5%;
   right: 24%;
+  z-index: -2;
 }
 .planet4 {
   position: absolute;
   height: 1.2%;
   top: 6%;
   left: 6%;
+  z-index: -2;
 }
 .planet5 {
   position: absolute;
   height: 1.2%;
   top: 6%;
   right: 15%;
+  z-index: -2;
 }
 
 .planet6 {
@@ -546,6 +558,7 @@ body {
   height: 0.6%;
   top: 10%;
   right: 10%;
+  z-index: -2;
 }
 
 .planet7 {
@@ -553,6 +566,7 @@ body {
   height: 0.5%;
   top: 12%;
   left: 15%;
+  z-index: -2;
 }
 
 .planet8 {
@@ -560,6 +574,7 @@ body {
   height: 1.8%;
   top: 22%;
   left: 10%;
+  z-index: -2;
 }
 
 .layer1 {
@@ -567,6 +582,7 @@ body {
   height: 0.8%;
   top: 27.5%;
   left: 14%;
+  z-index: -2;
 }
 
 .planet9 {
@@ -574,6 +590,7 @@ body {
   height: 1%;
   top: 28%;
   right: 10%;
+  z-index: -2;
 }
 
 .planet10 {
@@ -581,6 +598,7 @@ body {
   height: 1.2%;
   top: 39%;
   left: 6%;
+  z-index: -2;
 }
 
 .planet11 {
@@ -588,6 +606,7 @@ body {
   height: 1.2%;
   top: 43%;
   right: 10%;
+  z-index: -2;
 }
 
 .planet12 {
@@ -595,12 +614,14 @@ body {
   height: 0.7%;
   top: 45%;
   left: 20%;
+  z-index: -2;
 }
 .layer2 {
   position: absolute;
   height: 0.8%;
   top: 45.5%;
   left: 26%;
+  z-index: -2;
 }
 
 .planet13 {
@@ -608,12 +629,14 @@ body {
   height: 0.4%;
   top: 56.5%;
   left: 12%;
+  z-index: -2;
 }
 .layer3 {
   position: absolute;
   height: 0.8%;
   top: 59%;
   left: 35%;
+  z-index: -2;
 }
 
 .planet14 {
@@ -621,30 +644,35 @@ body {
   height: 5%;
   top: 56%;
   right: -13%;
+  z-index: -2;
 }
 .planet15 {
   position: absolute;
   height: 1%;
   top: 72%;
   left: 16%;
+  z-index: -2;
 }
 .planet16 {
   position: absolute;
   height: 0.9%;
   top: 76.4%;
   left: 16%;
+  z-index: -2;
 }
 .planet17 {
   position: absolute;
   height: 0.3%;
-  top: 80%;
-  right: 18%;
+  top: 80.15%;
+  right: 16%;
+  z-index: -2;
 }
 .layer4 {
   position: absolute;
   height: 0.8%;
   top: 81%;
   right: 10%;
+  z-index: -2;
 }
 
 .planet18 {
@@ -652,12 +680,14 @@ body {
   height: 1.4%;
   top: 86%;
   left: 5%;
+  z-index: -2;
 }
 .planet19 {
   position: absolute;
   height: 1%;
   top: 87%;
   right: 10%;
+  z-index: -2;
 }
 
 @media (max-width: 1100px) and (min-width: 601px) {
@@ -666,30 +696,35 @@ body {
     height: 0.3%;
     top: 2.5%;
     left: 18%;
+    z-index: -2;
   }
   .planet2 {
     position: absolute;
     height: 0.8%;
     top: 2.3%;
     right: 12%;
+    z-index: -2;
   }
   .planet3 {
     position: absolute;
     height: 0.2%;
     top: 5.7%;
     right: 18%;
+    z-index: -2;
   }
   .planet4 {
     position: absolute;
     height: 1%;
     top: 6.5%;
     left: 3%;
+    z-index: -2;
   }
   .planet5 {
     position: absolute;
     height: 1%;
     top: 6.5%;
     right: 7%;
+    z-index: -2;
   }
 
   .planet6 {
@@ -697,6 +732,7 @@ body {
     height: 0.4%;
     top: 10%;
     right: 11%;
+    z-index: -2;
   }
 
   .planet7 {
@@ -704,6 +740,7 @@ body {
     height: 0.4%;
     top: 12%;
     left: 15%;
+    z-index: -2;
   }
 
   .planet8 {
@@ -711,6 +748,7 @@ body {
     height: 1.4%;
     top: 21%;
     left: 10%;
+    z-index: -2;
   }
 
   .layer1 {
@@ -718,6 +756,7 @@ body {
     height: 0.7%;
     top: 26%;
     left: 14%;
+    z-index: -2;
   }
 
   .planet9 {
@@ -725,6 +764,7 @@ body {
     height: 0.8%;
     top: 26.5%;
     right: 7%;
+    z-index: -2;
   }
 
   .planet10 {
@@ -732,6 +772,7 @@ body {
     height: 1%;
     top: 37.5%;
     left: 6%;
+    z-index: -2;
   }
 
   .planet11 {
@@ -739,6 +780,7 @@ body {
     height: 1%;
     top: 44%;
     right: 10%;
+    z-index: -2;
   }
 
   .planet12 {
@@ -746,12 +788,14 @@ body {
     height: 0.5%;
     top: 46%;
     left: 18%;
+    z-index: -2;
   }
   .layer2 {
     position: absolute;
     height: 0.7%;
     top: 46.5%;
     left: 28%;
+    z-index: -2;
   }
 
   .planet13 {
@@ -759,12 +803,14 @@ body {
     height: 0.3%;
     top: 56%;
     left: 6%;
+    z-index: -2;
   }
   .layer3 {
     position: absolute;
     height: 0.7%;
     top: 60%;
     left: 35%;
+    z-index: -2;
   }
 
   .planet14 {
@@ -772,30 +818,35 @@ body {
     height: 4%;
     top: 58%;
     right: -13%;
+    z-index: -2;
   }
   .planet15 {
     position: absolute;
     height: 0.8%;
     top: 73%;
     left: 8%;
+    z-index: -2;
   }
   .planet16 {
     position: absolute;
     height: 0.7%;
     top: 78.2%;
     left: 15%;
+    z-index: -2;
   }
   .planet17 {
     position: absolute;
     height: 0.2%;
     top: 82.2%;
     right: 16%;
+    z-index: -2;
   }
   .layer4 {
     position: absolute;
     height: 0.7%;
     top: 83.5%;
     right: 10%;
+    z-index: -2;
   }
 
   .planet18 {
@@ -803,12 +854,14 @@ body {
     height: 1.1%;
     top: 86.5%;
     left: 5%;
+    z-index: -2;
   }
   .planet19 {
     position: absolute;
     height: 0.8%;
     top: 87%;
     right: 8%;
+    z-index: -2;
   }
 }
 @media (max-width: 600px) {
@@ -817,30 +870,35 @@ body {
     height: 0.3%;
     top: 2%;
     left: 7%;
+    z-index: -2;
   }
   .planet2 {
     position: absolute;
     height: 0.8%;
     top: 2%;
     right: 1%;
+    z-index: -2;
   }
   .planet3 {
     position: absolute;
     height: 0.3%;
     top: 5.7%;
     right: 8%;
+    z-index: -2;
   }
   .planet4 {
     position: absolute;
     height: 0.6%;
     top: 6.2%;
     left: 2%;
+    z-index: -2;
   }
   .planet5 {
     position: absolute;
     height: 0.6%;
     top: 6.5%;
     right: 2%;
+    z-index: -2;
   }
 
   .planet6 {
@@ -848,6 +906,7 @@ body {
     height: 0.4%;
     top: 11%;
     right: 10%;
+    z-index: -2;
   }
 
   .planet7 {
@@ -855,6 +914,7 @@ body {
     height: 0.4%;
     top: 12%;
     left: 15%;
+    z-index: -2;
   }
 
   .planet8 {
@@ -862,6 +922,7 @@ body {
     height: 1.2%;
     top: 20%;
     left: 10%;
+    z-index: -2;
   }
 
   .layer1 {
@@ -869,6 +930,7 @@ body {
     height: 0.6%;
     top: 24.5%;
     left: 20%;
+    z-index: -2;
   }
 
   .planet9 {
@@ -876,6 +938,7 @@ body {
     height: 0.6%;
     top: 24.5%;
     right: 10%;
+    z-index: -2;
   }
 
   .planet10 {
@@ -883,6 +946,7 @@ body {
     height: 0.8%;
     top: 35.5%;
     left: 2%;
+    z-index: -2;
   }
 
   .planet11 {
@@ -890,6 +954,7 @@ body {
     height: 0.8%;
     top: 42.5%;
     right: 5%;
+    z-index: -2;
   }
 
   .planet12 {
@@ -897,12 +962,14 @@ body {
     height: 0.4%;
     top: 45%;
     left: 20%;
+    z-index: -2;
   }
   .layer2 {
     position: absolute;
     height: 0.6%;
     top: 45.5%;
     left: 26%;
+    z-index: -2;
   }
 
   .planet13 {
@@ -910,12 +977,14 @@ body {
     height: 0.3%;
     top: 54%;
     left: 2%;
+    z-index: -2;
   }
   .layer3 {
     position: absolute;
     height: 0.6%;
     top: 58%;
     left: 28%;
+    z-index: -2;
   }
 
   .planet14 {
@@ -923,30 +992,35 @@ body {
     height: 4%;
     top: 56%;
     right: -22%;
+    z-index: -2;
   }
   .planet15 {
     position: absolute;
     height: 0.5%;
     top: 69.5%;
     left: 1%;
+    z-index: -2;
   }
   .planet16 {
     position: absolute;
     height: 0.8%;
     top: 75.5%;
     left: 8%;
+    z-index: -2;
   }
   .planet17 {
     position: absolute;
     height: 0.3%;
     top: 84.7%;
     right: 8%;
+    z-index: -2;
   }
   .layer4 {
     position: absolute;
     height: 0.6%;
     top: 86%;
     right: 10%;
+    z-index: -2;
   }
 
   .planet18 {
@@ -954,12 +1028,14 @@ body {
     height: 0.7%;
     top: 88.3%;
     left: 3%;
+    z-index: -2;
   }
   .planet19 {
     position: absolute;
     height: 0.6%;
     top: 90%;
     right: 5%;
+    z-index: -2;
   }
 }
 .Form {
@@ -970,45 +1046,45 @@ body {
   padding-bottom: var(--wd-200);
 }
 
-.Form .container .row .login-content {
+.Form .container .row .waitlist-content {
   text-align: start;
 }
 
-.Form .container .row .login-content h4 {
+.Form .container .row .waitlist-content h4 {
   padding-left: var(--pl-100);
   margin-top: var(--ml-100);
   font-weight: 700;
   color: #ffffff;
 }
-.Form .container .row .login-content p {
+.Form .container .row .waitlist-content p {
   padding-left: var(--pl-100);
   padding-top: var(--fs-100);
   font-weight: 200;
   color: #d3d4d4;
 }
 
-.Form .container .row .login-content label {
+.Form .container .row .waitlist-content label {
   font-weight: 300;
   font-size: var(--fs-900);
   color: #d3d4d4;
   padding-bottom: var(--mt-100);
 }
 
-.Form .container .row .login-content .form-control {
+.Form .container .row .waitlist-content .form-control {
   margin-bottom: var(--fs-100);
   border-radius: 0%;
   border: transparent;
   -webkit-clip-path: polygon(0% 30%, 3% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.Form .container .row .login-content .msg {
+.Form .container .row .waitlist-content .msg {
   margin-bottom: var(--fs-100);
   border-radius: 0%;
   border: transparent;
   -webkit-clip-path: polygon(0% 10%, 5% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.Form .container .row .login-content .button {
+.Form .container .row .waitlist-content .button {
   padding: var(--pd-100);
   width: var(--mt-200);
   text-decoration: none;
@@ -1031,7 +1107,7 @@ body {
   margin-top: var(--fs-100);
 }
 
-.Form .container .row .login-content .button:hover {
+.Form .container .row .waitlist-content .button:hover {
   background-image: linear-gradient(to right, #7123d6, #8327f7);
 }
 .lg-planet1 {
